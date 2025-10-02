@@ -1,0 +1,41 @@
+﻿<Window x:Class="HostelApp.Views.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:HostelApp.ViewModels"
+        xmlns:c="clr-namespace:HostelApp.Components"
+        
+        Title="AuthWindow" 
+        
+        Height="250" Width="300"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Normal"
+        ResizeMode="NoResize">
+    <Window.DataContext>
+        <vm:AuthWindowViewModel/>
+    </Window.DataContext>
+    
+    <Window.InputBindings>
+        <KeyBinding Key="Escape"
+                    Command="{Binding Path=CommandExit}"/>
+        <KeyBinding Key="Enter"
+                    Command="{Binding Path=CommandLogin}"/>
+    </Window.InputBindings>
+    
+    <StackPanel Orientation="Vertical">
+        <TextBlock Text="Авторизация"/>
+        <c:InputComponent Label="Логин"
+                          Value="{Binding InputLogin, 
+                                        UpdateSourceTrigger=PropertyChanged, 
+                                        Mode=TwoWay}"/>
+        <c:InputComponent Label="Пароль"
+                          Value="{Binding InputPassword, 
+                                        UpdateSourceTrigger=PropertyChanged, 
+                                        Mode=TwoWay}"/>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Войти"
+                    Command="{Binding Path=CommandLogin}"/>
+            <Button Content="Отмена"
+                    Command="{Binding Path=CommandExit}"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostelApp", "HostelApp\HostelApp.csproj", "{A7BA7400-E069-4687-AE3D-B68D0A9AAC8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostelApp.DAL", "HostelApp.DAL\HostelApp.DAL.csproj", "{4AB5C1D0-B9E6-45A2-ACCA-9B4166CFE86C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostelApp.DAL.Test", "HostelApp.DAL.Test\HostelApp.DAL.Test.csproj", "{2D043E76-90C3-4909-BDB4-A36871795A2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "others", "others", "{2ED48038-8BD8-4B0B-BCDA-A211747969A4}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7BA7400-E069-4687-AE3D-B68D0A9AAC8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7BA7400-E069-4687-AE3D-B68D0A9AAC8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7BA7400-E069-4687-AE3D-B68D0A9AAC8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7BA7400-E069-4687-AE3D-B68D0A9AAC8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AB5C1D0-B9E6-45A2-ACCA-9B4166CFE86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB5C1D0-B9E6-45A2-ACCA-9B4166CFE86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB5C1D0-B9E6-45A2-ACCA-9B4166CFE86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB5C1D0-B9E6-45A2-ACCA-9B4166CFE86C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D043E76-90C3-4909-BDB4-A36871795A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D043E76-90C3-4909-BDB4-A36871795A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D043E76-90C3-4909-BDB4-A36871795A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D043E76-90C3-4909-BDB4-A36871795A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
