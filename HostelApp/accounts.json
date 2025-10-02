@@ -1,5 +1,5 @@
 ﻿[
-  /*{
+  {
     "id": "676D743D-F76C-4026-A740-DC1259B684C5",
     "login": "admin",
     "password": "admin"
@@ -8,5 +8,5 @@
     "id": "0199a55f-80ee-75d7-8cff-9d70af725aa7",
     "login": "root",
     "password": "1234"
-  }*/
+  }
 ]
