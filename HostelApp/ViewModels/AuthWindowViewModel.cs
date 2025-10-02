@@ -25,7 +25,7 @@ public class AuthWindowViewModel : ViewModelBase
 
     private readonly IEnumerable<Account> _accounts;
 
-    public AuthWindowViewModel()
+    public AuthWindowViewModel() : base("Авторизация")
     {
         _accounts = AccountService.Load();
 

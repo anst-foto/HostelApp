@@ -4,7 +4,7 @@
         xmlns:vm="clr-namespace:HostelApp.ViewModels"
         xmlns:c="clr-namespace:HostelApp.Components"
         
-        Title="AuthWindow" 
+        Title="{StaticResource ResourceKey=Title_AuthWindow}" 
         
         Height="250" Width="300"
         WindowStartupLocation="CenterScreen"
@@ -22,7 +22,7 @@
     </Window.InputBindings>
     
     <StackPanel Orientation="Vertical">
-        <TextBlock Text="Авторизация"/>
+        <TextBlock Text="{Binding Path=Title}"/>
         <c:InputComponent Label="Логин"
                           Value="{Binding InputLogin, 
                                         UpdateSourceTrigger=PropertyChanged, 
