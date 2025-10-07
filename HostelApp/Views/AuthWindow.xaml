@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:HostelApp.ViewModels"
         xmlns:c="clr-namespace:HostelApp.Components"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         
         Title="{StaticResource ResourceKey=Title_AuthWindow}" 
         
@@ -33,7 +34,16 @@
                                         Mode=TwoWay}"/>
         <StackPanel Orientation="Horizontal">
             <Button Content="Войти"
-                    Command="{Binding Path=CommandLogin}"/>
+                    Command="{Binding Path=CommandLogin}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:CallMethodAction MethodName="Hide"
+                                            TargetObject="{Binding RelativeSource={RelativeSource
+                                                  Mode=FindAncestor,
+                                                  AncestorType=Window}}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
             <Button Content="Отмена"
                     Command="{Binding Path=CommandExit}"/>
         </StackPanel>

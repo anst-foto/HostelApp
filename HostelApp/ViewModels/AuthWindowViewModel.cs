@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Input;
 using HostelApp.DAL;
+using HostelApp.Views;
 
 namespace HostelApp.ViewModels;
 
@@ -40,8 +41,8 @@ public class AuthWindowViewModel : ViewModelBase
         var account = _accounts.SingleOrDefault(a => a.Login == InputLogin && a.Password == InputPassword);
         if (account is null) return;
         
-        //TODO: заменить на переход на главное окно
-        MessageBox.Show("Logged in successfully!");
+        var window = new MainWindow();
+        window.Show();
     }
 
     private bool CanLogin() => !string.IsNullOrEmpty(InputLogin) 
